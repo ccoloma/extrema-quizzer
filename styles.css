@@ -1,4 +1,13 @@
+body {
+  color: #333;
+}
+
 header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
   text-align: center;
   margin-top: 50px;
 }
@@ -10,7 +19,7 @@ header {
 
 .quiz-box {
   width: 300px;
-  height: 300px;
+  height: 150px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -24,15 +33,37 @@ header {
 .quiz-header {
   display: flex;
   margin-left: auto;
-  max-width: 793px;
+  max-width: 300px;
   margin-right: auto;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+}
+
+.quiz-header img {
+  max-width: 96%;
 }
 
 .quiz-header .spring, .quiz-header .cloud-platform {
-  width: 300px;
+  margin-left: 4px;
+  max-width: 48%;
+}
+
+.qp_title {
+  display: none !important;
+}
+
+.quiz-container {
+  max-width: 300px !important;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .quiz-header {
+    max-width: 700px;
+  }
+  .quiz-container {
+    max-width: 700px !important;
+  }
 }
 
 /* Loading */
